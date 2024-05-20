@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Enhanced To Do List</title>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>To Do List</h1>
+        <div id="newtask">
+            <input type="text" id="taskinput" placeholder="Task to be done..">
+            <input type="date" id="duedate">
+            <select id="priority">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+            <button id="push">Add</button>
+        </div>
+        <div id="filter">
+            <button id="all">All</button>
+            <button id="completed">Completed</button>
+            <button id="incomplete">Incomplete</button>
+            <button id="sortBy">Sort By Priority</button>
+        </div>
+        <div id="tasks"></div>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
